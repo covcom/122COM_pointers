@@ -2,8 +2,6 @@
 #include <iostream>
 using namespace std;
 
-#include "leaker.h"
-
 class ReallyBigClass
 {
 public:

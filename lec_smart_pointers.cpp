@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-	shared_ptr<int[]> pointerA = make_shared<int[24]>();			
+	shared_ptr<int> pointerA = make_shared<int>();			
+	*pointerA = 42;
+
 	cout << pointerA.use_count() << endl; // 1
 
 	shared_ptr<int> pointerB = pointerA;
