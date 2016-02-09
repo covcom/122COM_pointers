@@ -3,9 +3,21 @@
 #include <cmath>
 using namespace std;
 
+
 int *find_max( vector<int> &storage )
 {
-	// COMPLETE ME
+	if( storage.empty() ) return nullptr;
+	
+	int *ptr = &storage[0];
+	for( int i=1; i<storage.size(); ++i )
+	{
+		if( *ptr < storage[i] )
+		{
+			ptr = &storage[i];
+		}
+	}
+
+	return ptr;
 }
 
 int main()
