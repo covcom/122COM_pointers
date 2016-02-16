@@ -5,8 +5,8 @@ using namespace std;
 class ReallyBigClass
 {
 public:
-	array<int,1000> bigArray;
-	array<int,1000000> massiveArray;
+	array<int,100> bigArray;
+	array<int,10000> massiveArray;
 };
 
 int main()

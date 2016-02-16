@@ -11,7 +11,7 @@ int some_function( array<int,5> &values )
 int main()
 {
 	array<int,5> v {0, 1, 2, 3, 4};
-array<char,6> myArray { "Hello"};
+
 	some_function(v);
 
 	for( int i : v )		// 0,2,4,6,8
